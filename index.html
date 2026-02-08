@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>🧠 Memory Card Game</h1>
+
+<div class="controls">
+  <input type="number" id="cardCount" placeholder="Enter even number" min="2">
+  <button onclick="startGame()">Start</button>
+  <button onclick="useHint()">Hint (<span id="hints">3</span>)</button>
+  <button onclick="restartGame()">Restart</button>
+</div>
+
+<p>Score: <span id="score">100</span></p>
+
+<div id="gameBoard" class="game-board"></div>
+<p id="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
